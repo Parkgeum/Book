@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/List_item"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/category_img"
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="6dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/UserNameTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="홍길동"
+
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/category_img"
+        app:layout_constraintTop_toTopOf="@+id/category_img"
+        tools:layout_editor_absoluteX="139dp" />
+
+    <TextView
+        android:id="@+id/PayTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연봉"
+
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/category_img"
+        app:layout_constraintStart_toStartOf="@id/UserNameTxt"
+        tools:layout_editor_absoluteX="145dp" />
+
+    <TextView
+        android:id="@+id/AdressTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+
+        android:text="주소"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/PayTxt"
+        app:layout_constraintStart_toEndOf="@id/PayTxt"
+        app:layout_constraintTop_toTopOf="@id/PayTxt"
+        tools:layout_editor_absoluteX="201dp"
+        tools:layout_editor_absoluteY="115dp" />
+</LinearLayout>
