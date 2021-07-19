@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "927239767292",
+    "project_id": "goldbook-ad8eb",
+    "storage_bucket": "goldbook-ad8eb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:927239767292:android:7b9329e4f498767c784379",
+        "android_client_info": {
+          "package_name": "com.gjpark.goldbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "927239767292-i346ms7fjjps04dq3onb5l8tl5q4rfk1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtJ0ca1GK7KmBdZhuUT6gNXDIHc4aMWVc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "927239767292-i346ms7fjjps04dq3onb5l8tl5q4rfk1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
