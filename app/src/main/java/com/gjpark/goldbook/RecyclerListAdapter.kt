@@ -14,14 +14,14 @@ class RecyclerListAdapter(private val context: Context, private val dataList: Ar
 
 
         inner class ItemViewHolder(itemView: View): RecyclerView.ViewHolder(itemView){
-           //private val userPhoto = itemView.findViewById<ImageView>(R.id.category_img)
+            private val userPhoto = itemView.findViewById<ImageView>(R.id.category_img)
             private val userName = itemView.findViewById<TextView>(R.id.UserNameTxt)
             private val userPay = itemView.findViewById<TextView>(R.id.PayTxt)
             private val userAdress = itemView.findViewById<TextView>(R.id.AdressTxt)
 
 
             fun bind(dataVo: DataVo, context: Context){
-        /*
+
                 //사진 처리
                 if (dataVo.photo != ""){
                     val resourceld = context.resources.getIdentifier(dataVo.photo, "drawable", context.packageName)
@@ -33,7 +33,7 @@ class RecyclerListAdapter(private val context: Context, private val dataList: Ar
                 }
                 else
                     userPhoto.setImageResource(R.mipmap.ic_launcher_round)
-        */
+
 
                 //textview data setting
                 userName.text = dataVo.name
@@ -49,8 +49,7 @@ class RecyclerListAdapter(private val context: Context, private val dataList: Ar
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-        //holder.bind(dataList[position], context)
-        Log.d("리사이클러뷰 로드","ㅇㅇㅇ")
+        holder.bind(dataList[position], context)
     }
 
     override fun getItemCount(): Int {

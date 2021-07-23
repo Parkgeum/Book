@@ -12,9 +12,9 @@ import com.gjpark.goldbook.databinding.ActivityMainBinding
 class FragmentA : Fragment() {
 
     val userList = arrayListOf<DataVo>(
-        DataVo("IU", "test1", "전주시", "3000000") ,
-        DataVo("홍길동", "test2", "서울시", "100000"),
-        DataVo("김영수", "test3", "광주광역시", "2000000")
+        DataVo("IU", "test1", "전주시", 3000000, "user_img01") ,
+        DataVo("홍길동", "test2", "서울시", 100000, "user_img02"),
+        DataVo("김영수", "test3", "광주광역시", 2000000, "user_img03")
     )
     lateinit var recyclerView: RecyclerView
 
