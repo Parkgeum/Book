@@ -1,3 +1,3 @@
 package com.gjpark.goldbook
 
-class DataVo(val name:String, val id:String, val address:String, val pay: Int, val photo: String)
+data class DataVo(val name:String?=null, val id:String?=null, val address:String?=null, val pay: Int?=null, val photo: String?=null)

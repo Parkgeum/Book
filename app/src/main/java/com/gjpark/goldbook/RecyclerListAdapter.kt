@@ -78,6 +78,6 @@ class RecyclerListAdapter(private val context: Context, private val dataList: Ar
             dataList.removeAt(position)
             notifyDataSetChanged()
         }
-    }
+    }*/
 }
-*/
+
